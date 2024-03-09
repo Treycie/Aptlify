@@ -3,28 +3,15 @@ import React from "react";
 const Footer = () => {
   return (
 
-<footer class="bg-white dark:bg-gray-900">
+<footer  class="text-white" style={{
+        backgroundImage: `url(${require("../../assets/Images/footer-bg.jpg")})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}>
+
   <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
     <div class="sm:flex sm:items-center sm:justify-between">
-    <a
-        class="inline-block rounded-full bg-red-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4"
-        href="#MainContent"
-      >
-        <span class="sr-only">Back to top</span>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </a>
+    
 
       <ul class="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
         <li>
@@ -32,7 +19,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+            class="text-white-700 transition hover:opacity-75 dark:text-white-200"
           >
             <span class="sr-only">Facebook</span>
 
@@ -51,7 +38,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+            class="text-white-700 transition hover:opacity-75 dark:text-white-200"
           >
             <span class="sr-only">Instagram</span>
 
@@ -70,7 +57,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+            class="text-white-700 transition hover:opacity-75 dark:text-white-200"
           >
             <span class="sr-only">Twitter</span>
 
@@ -87,7 +74,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+            class="text-white-700 transition hover:opacity-75 dark:text-white-200"
           >
             <span class="sr-only">GitHub</span>
 
@@ -106,7 +93,7 @@ const Footer = () => {
             href="/"
             rel="noreferrer"
             target="_blank"
-            class="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+            class="text-white-700 transition hover:opacity-75 dark:text-white-200"
           >
             <span class="sr-only">Dribbble</span>
 
@@ -118,67 +105,61 @@ const Footer = () => {
               />
             </svg>
           </a>
+
         </li>
       </ul>
+      
     </div>
 
     <div
-      class="grid grid-cols-1 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16 dark:border-gray-800"
+      class="grid grid-cols-1 gap-8 border-t border-white-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16 dark:border-white-800"
     >
       <div>
-        <p class="font-medium text-gray-900 dark:text-white">Services</p>
+        <p class="font-medium text-white-900 dark:text-white">Services</p>
 
         <ul class="mt-6 space-y-4 text-sm">
-          <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-              1on1 Coaching
-            </a>
-          </li>
+          
 
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Company Review
             </a>
           </li>
 
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Accounts Review
             </a>
           </li>
 
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               HR Consulting
             </a>
           </li>
 
-          <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-              SEO Optimisation
-            </a>
-          </li>
+         
         </ul>
       </div>
 
       <div>
-        <p class="font-medium text-gray-900 dark:text-white">Company</p>
+        <p class="font-medium text-white-900 dark:text-white">Company</p>
 
         <ul class="mt-6 space-y-4 text-sm">
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               About
             </a>
           </li>
 
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Meet the Team
             </a>
           </li>
 
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Accounts Review
             </a>
           </li>
@@ -186,23 +167,23 @@ const Footer = () => {
       </div>
 
       <div>
-        <p class="font-medium text-gray-900 dark:text-white">Helpful Links</p>
+        <p class="font-medium text-white-900 dark:text-white">Helpful Links</p>
 
         <ul class="mt-6 space-y-4 text-sm">
           <li>
-            <a href="#" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="#" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Contact
             </a>
           </li>
 
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               FAQs
             </a>
           </li>
 
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Live Chat
             </a>
           </li>
@@ -210,38 +191,34 @@ const Footer = () => {
       </div>
 
       <div>
-        <p class="font-medium text-gray-900 dark:text-white">Legal</p>
+        <p class="font-medium text-white-900 dark:text-white">Legal</p>
 
         <ul class="mt-6 space-y-4 text-sm">
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Accessibility
             </a>
           </li>
 
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Returns Policy
             </a>
           </li>
 
           <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Refund Policy
             </a>
           </li>
 
-          <li>
-            <a href="/" class="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-              Hiring Statistics
-            </a>
-          </li>
+          
         </ul>
       </div>
     </div>
 
-    <p class="text-xs text-gray-500 dark:text-gray-400">
-      &copy; 2022. Aptify . All rights reserved.
+    <p class="text-xs text-white-500 dark:text-white-400">
+      &copy; 2024. Aptify . All rights reserved.
     </p>
   </div>
 </footer>
