@@ -16,7 +16,7 @@ const Hero = () => {
             className="mb-100 text-5xl font-bold ml-4"
             style={{ fontSize: "1.5rem", color: "red" }}
           >
-            APTIFY
+            APTLIFY
           </h1>
           <p
             className="mb-10 font-bold ml-4"

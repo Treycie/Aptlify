@@ -1,29 +1,31 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
-// import { UserAuth } from "../../functionsuser/authentication";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  // // const { user, logOut } = UserAuth();
-  // const navigate = useNavigate();
-  // // console.log(user.email)
+  const [scrolled, setScrolled] = useState(false);
 
-  // const handleLogout = async () => {
-  //   try {
-  //     await logOut();
-  //     navigate("/");
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header>
-      <div className="flex items-center justify-between p-4 z-[100] w-full absolute">
-    <Link to="/">
-      <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
-        APTIFY
-      </h1>
-    </Link>
+    <header className={`fixed top-0 w-full ${scrolled ? 'bg-black bg-opacity-100' : 'bg-transparent'} `}>
+      <div className="flex items-center justify-between p-4 z-[100]">
+        <Link to="/">
+          <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
+            APTLIFY
+          </h1>
+        </Link>
+
     
       
       <div class="flex items-center gap-4">

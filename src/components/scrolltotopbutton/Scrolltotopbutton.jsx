@@ -39,7 +39,7 @@ const ScrollToTopButton = () => {
   return (
     <div className="relative">
       <button
-        className={`fixed bottom-4 right-4 rounded-full bg-red-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4 ${showButton ? 'visible' : 'invisible'}`}
+        className={`fixed bottom-4 right-4 rounded-full bg-red-600 p-2 text-white shadow transition hover:bg-black-500 sm:p-3 lg:p-4 ${showButton ? 'visible' : 'invisible'}`}
         onClick={scrollToTop}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
