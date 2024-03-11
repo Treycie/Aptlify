@@ -19,10 +19,16 @@ const Hero = () => {
             APTLIFY
           </h1>
           <p
-            className="mb-10 font-bold ml-4"
-            style={{ fontSize: "3.0rem", color: "white" }}
+            className="font-bold ml-4 whitespace-nowrap"
+            style={{ fontSize: "3.8rem", color: "white" }}
           >
-            Unlimited Movies, TV Shows,& More.
+            Unlimited Movies,
+          </p>
+          <p
+            className="mb-10 font-bold ml-4 whitespace-nowrap"
+            style={{ fontSize: "3.8rem", color: "white" }}
+          >
+            TV Shows,& More.
           </p>
           <button
             type="button"

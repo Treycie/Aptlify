@@ -171,7 +171,7 @@ const Footer = () => {
 
         <ul class="mt-6 space-y-4 text-sm">
           <li>
-            <a href="#" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
+            <a href="/" class="text-white-700 transition hover:opacity-75 dark:text-white-200">
               Contact
             </a>
           </li>
@@ -218,7 +218,7 @@ const Footer = () => {
     </div>
 
     <p class="text-xs text-white-500 dark:text-white-400">
-      &copy; 2024. Aptify . All rights reserved.
+      &copy; 2024. Aptlify . All rights reserved.
     </p>
   </div>
 </footer>
