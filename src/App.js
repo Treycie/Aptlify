@@ -4,6 +4,8 @@ import Signup from "./pages/Signup/signup"
 import Signin from "./pages/Signin/signin"
 import Getstarted from "./pages/Getstarted/getstarted"
 
+
+
 const router = createBrowserRouter([
   { path: "/", element: <Landing /> },
   { path: "/signin", element: <Signin /> },
