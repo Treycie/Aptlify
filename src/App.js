@@ -5,6 +5,8 @@ import Signin from "./pages/Signin/signin"
 import Getstarted from "./pages/Getstarted/getstarted"
 import Topratedmovies from "./pages/Topratedmovies/Topratedmovies"
 
+
+
 const router = createBrowserRouter([
   { path: "/", element: <Landing /> },
   { path: "/signin", element: <Signin /> },
