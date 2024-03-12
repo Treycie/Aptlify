@@ -36,7 +36,7 @@ const Getstarted = () => {
                 <span>Tristique enim nec</span>
               </li>
             </ul>
-            <button type="button" className="inline-block px-5 py-3 font-semibold tracki text-center rounded dark:bg-violet-400 dark:text-gray-900">Get Started</button>
+            <button type="button" className="bg-red-600 inline-block px-5 py-3 font-semibold tracki text-center rounded dark:bg-violet-400 dark:text-gray-900">Get Started</button>
           </div>
         </div>
         <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -74,7 +74,7 @@ const Getstarted = () => {
                 <span>Aenean et lectus blandit</span>
               </li>
             </ul>
-            <a rel="noopener noreferrer" href="#" className="inline-block w-full px-5 py-3 font-bold tracki text-center rounded dark:bg-gray-800 dark:text-violet-400">Get Started</a>
+            <a rel="noopener noreferrer" href="/" className="bg-red-600 inline-block w-full px-5 py-3 font-bold tracki text-center rounded dark:bg-gray-800 dark:text-violet-400">Get Started</a>
           </div>
         </div>
         <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -118,7 +118,7 @@ const Getstarted = () => {
                 <span>Vivamus ut lectus ex</span>
               </li>
             </ul>
-            <a rel="noopener noreferrer" href="/" className="inline-block w-full px-5 py-3 font-semibold tracki text-center rounded dark:bg-violet-400 dark:text-gray-900">Get Started</a>
+            <a rel="noopener noreferrer" href="/" className="bg-red-600 inline-block w-full px-5 py-3 font-semibold tracki text-center rounded dark:bg-violet-400 dark:text-gray-900">Get Started</a>
           </div>
         </div>
       </div>

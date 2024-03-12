@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const useQueryPopular = () => {
-  const [popular, setPopular] = useState([]);
+  const [popularMovies, setPopularMovies] = useState([]);
   const baseUrl = "https://api.themoviedb.org/3";
 
   const fetchPopular = async () => {
@@ -21,7 +21,7 @@ const useQueryPopular = () => {
     fetchPopular();
   }, []);
 
-  return { results: popular };
+  return { popularMovies};
 };
 
 export default useQueryPopular;

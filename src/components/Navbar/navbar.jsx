@@ -41,20 +41,24 @@ const Navbar = () => {
 			</div>
 
         <div class="sm:flex sm:gap-4">
-          <a
+          <Link to="/signin">
+          <button
             class="rounded-md bg-red-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-            href="/"
+      
           >
             Signin
-          </a>
+          </button>
+          </Link>
 
           <div class="hidden sm:flex">
-            <a
+            <Link to="/signup">
+            <button
               class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-red-600"
-              href="/"
+            
             >
               Sign up
-            </a>
+            </button>
+            </Link>
           </div>
         </div>
 
