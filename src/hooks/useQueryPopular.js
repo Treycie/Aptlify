@@ -15,7 +15,7 @@ const useQueryPopular = () => {
 
     const res = await (await fetch(url, options)).json();
     console.log(res.results);
-    setPopular(res.results);
+    setPopularMovies(res.results);
   };
   useEffect(() => {
     fetchPopular();
