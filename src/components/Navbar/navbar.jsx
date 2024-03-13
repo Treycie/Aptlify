@@ -18,8 +18,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full ${scrolled ? 'bg-black bg-opacity-100' : 'bg-transparent'} `}>
-      <div className="flex items-center justify-between p-4 z-[100]">
+    <header className={`fixed top-0 w-full ${scrolled ? 'bg-black bg-opacity-100' : 'bg-transparent'} z-[50]`}>
+      <div className="flex items-center justify-between p-4">
         <Link to="/">
           <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
             APTLIFY

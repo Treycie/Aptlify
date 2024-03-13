@@ -37,7 +37,7 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-[50]">
       <button
         className={`fixed bottom-4 right-4 rounded-full bg-red-600 p-2 text-white shadow transition hover:bg-black-500 sm:p-3 lg:p-4 ${showButton ? 'visible' : 'invisible'}`}
         onClick={scrollToTop}
