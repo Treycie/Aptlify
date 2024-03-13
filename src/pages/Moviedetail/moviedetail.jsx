@@ -58,7 +58,7 @@ const Moviedetail = () => {
                <img
                 src={`https://image.tmdb.org/t/p/w500${movieData.backdrop_path}`}
                 alt={movieData.title}
-                className="border border-white shadow-xl rounded-lg ml-24 pt-10 object-contain h-96 w-full mt-24"
+                className="border border-white shadow-xl rounded-lg ml-24 pt-10 object-fit-cover h-96 w-full mt-24"
               />
             </div>
             <div className="ml-28 mt-10">
@@ -72,10 +72,12 @@ const Moviedetail = () => {
               <div className="pt-2" />
               <p>Rating: {movieData.rating}</p>
               <div className="pt-2" />
+              <p>Popularity: {movieData.popularity}</p>
+              <div className="pt-2" />
               <h2>Overview
                 <p>{movieData.overview}</p></h2>
               <div className="pt-2" />
-              <p>Popularity: {movieData.popularity}</p>
+              
             </div>
           </div>
         )}
