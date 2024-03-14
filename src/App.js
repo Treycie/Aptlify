@@ -10,7 +10,11 @@ const router = createBrowserRouter([
   { path: "/", element: <Landing /> },
   { path: "/signin", element: <Signin /> },
   { path: "/signup", element: <Signup /> },
-  { path: "/getstarted", element: <Getstarted /> },
+  { path: "/getstarted", element: <Signup /> },
+  {path: "/getstarted/signup", element: <Getstarted />}
+//   {path: "/upcomingmovies", element: },
+//   {path: "/topratedmovies", element: },
+//   {path: "/popularmovies", element:}
 ])
 const App = () => {
   return (

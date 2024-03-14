@@ -1,5 +1,5 @@
 import React from 'react'
-import useQueryPopular from "../../hooks/useQueryPopular";
+import useQueryUpcoming from '../../hooks/useQueryUpcoming';
 import "../movielistlanding/movielistlanding.css";
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,47 +8,37 @@ import 'swiper/css/pagination';
 import { useNavigate} from "react-router-dom"
 
 
-const Popularmovieslanding = () => {
-    const { popularMovies, isLoading } = useQueryPopular();
+const Upcominglanding = () => {
+    const { upcomingMovies, isLoading } = useQueryUpcoming();
     const navigate = useNavigate()
 
-//   const [scrollPosition, setScrollPosition] = useState(0);
-
-//   const handleScroll = (scrollOffset) => {
-//     const container = document.querySelector('.custom-scrollbar');
-//     container.scrollLeft += scrollOffset;
-//   };
-
   return (
-    
-    <div className="text-white  pt-20 top-0 left-0 right-0 z-20">
-    <div className="text-white pt-20 px-20 font-bold mb-4 flex items-center justify-between">
-      <h1 className='text-3xl '>Popular Movies</h1>
-      <button variant="text" className="flex items-center gap-2" onClick={() => navigate("/popularmovies")}>
-      See More{" "}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={2}
-        stroke="currentColor"
-        className="h-5 w-5"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-        />
-      </svg>
-    </button>
-    </div>
-        
+<div className="text-white pt-20  top-0 left-0 right-0 z-20">
+        <div className="text-white pt-20 px-20 font-bold mb-4 flex items-center justify-between">
+          <h1 className='text-3xl '>Upcoming Movies</h1>
+          <button variant="text" className="flex items-center gap-2" onClick={() => navigate("/upcomingmovies")}>
+          See More{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="h-5 w-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </button>
+        </div>
+      
         <div className="flex overflow-x-auto custom-scrollbar relative" style={{ scrollBehavior: "smooth" }}>
           {isLoading ? (
             <div>Loading</div>
           ) : (
-            
-
             <Swiper
             modules={[Autoplay,]}
       spaceBetween={50}
@@ -60,7 +50,7 @@ const Popularmovieslanding = () => {
         disableOnInteraction: false,
       }}
     >{
-        popularMovies.map((movie, index) => (
+        upcomingMovies.map((movie, index) => (
             <SwiperSlide>
               <div
                 key={index}
@@ -79,8 +69,8 @@ const Popularmovieslanding = () => {
             ))
         }
     </Swiper>
-
-          )}
+        
+        )}
         </div>
        
       </div>
@@ -89,6 +79,4 @@ const Popularmovieslanding = () => {
   );
 };
 
-
-
-export default Popularmovieslanding
+export default Upcominglanding

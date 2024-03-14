@@ -4,7 +4,7 @@ const Footer = () => {
   return (
 
 <footer  class="text-white" style={{
-        backgroundImage: `url(${require("../../assets/Images/footer-bg.jpg")})`,
+        backgroundImage: `url(${require("../../assets/Images/francesco-ungaro-jqKS0ET-wGE-unsplash.jpg")})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}>
