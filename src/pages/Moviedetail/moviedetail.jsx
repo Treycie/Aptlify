@@ -2,8 +2,8 @@ import React, {useState, useEffect} from "react";
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
 import love from "../../assets/Images/love.svg";
-import list from "../../assets/Images/list.svg";
 import add from "../../assets/Images/add.svg";
+import star from "../../assets/Images/star.svg";
 import axios from 'axios'; // For making API requests
 
 
@@ -85,7 +85,7 @@ const Moviedetail = () => {
               <button className="w-44 border bg-transparent hover:bg-white rounded-lg hover:text-black">Watch </button>
               <button><img src={love} alt="love-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
               <button><img src={add} alt="add-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
-              <button><img src={list} alt="list-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
+              <button><img src={star} alt="star-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
               </div>
           
             </div>
