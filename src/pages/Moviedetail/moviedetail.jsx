@@ -56,7 +56,7 @@ const Moviedetail = () => {
           <div className="mt-15 w-full flex items-center justify-center text-white font-bold">
             <div>
                <img
-                src={`https://image.tmdb.org/t/p/w500${movieData.backdrop_path}`}
+                src={`https://image.tmdb.org/t/p/w500${movieData.poster_path}`}
                 alt={movieData.title}
                 className="border border-white shadow-xl rounded-lg ml-24 pt-10 object-fit-cover h-96 w-full mt-24"
               />
