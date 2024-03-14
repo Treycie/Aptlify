@@ -83,9 +83,9 @@ const Moviedetail = () => {
 
               <div className="flex"> 
               <button className="w-44 border bg-transparent hover:bg-white rounded-lg hover:text-black">Watch </button>
-              <button><img src={love} alt="love-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
-              <button><img src={add} alt="add-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
-              <button><img src={star} alt="star-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
+              <button><img src={love} alt="love-icon" className="w-8 ml-3 rounded-full hover:bg-none" /></button>
+              <button><img src={add} alt="add-icon" className="w-8 ml-3 rounded-full hover:bg-none" /></button>
+              <button><img src={star} alt="star-icon" className="w-8 ml-3 rounded-full hover:bg-none" /></button>
               </div>
           
             </div>
