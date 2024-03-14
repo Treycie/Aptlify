@@ -64,7 +64,7 @@ const Moviedetail = () => {
                 className="border border-white shadow-xl rounded-lg ml-24 object-fill h-auto w-full mt-24"
               />
             </div>
-            <div className="ml-28 mt-10">
+            <div className="ml-28 mt-16">
               <h1>Title: {movieData.title}</h1>
               <div className="pt-2" />
               <p>Genre: {movieData.genre_ids}</p>
@@ -82,7 +82,7 @@ const Moviedetail = () => {
               <div className="pt-12" /> 
 
               <div className="flex"> 
-              <button className="w-44 border bg-transparent hover:bg-white hover:text-white rounded-lg hover:text-black">Watch </button>
+              <button className="w-44 border bg-transparent hover:bg-white rounded-lg hover:text-black">Watch </button>
               <button><img src={love} alt="love-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
               <button><img src={add} alt="add-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
               <button><img src={list} alt="list-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
