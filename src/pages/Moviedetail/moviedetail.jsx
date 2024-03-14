@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
 import love from "../../assets/Images/love.svg";
@@ -73,7 +73,7 @@ const Moviedetail = () => {
               <div className="pt-2" />
               <p>Language: {movieData.original_language}</p>
               <div className="pt-2" />
-              <p>Rating: {movieData.rating}</p>
+              <p>Rating: {movieData.vote_average}</p>
               <div className="pt-2" />
               <p>Popularity: {movieData.popularity}</p>
               <div className="pt-2" />
