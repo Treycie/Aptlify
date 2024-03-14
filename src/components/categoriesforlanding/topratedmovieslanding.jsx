@@ -1,6 +1,5 @@
 import React from 'react'
 import useQueryToprated from "../../hooks/useQueryToprated";
-import "../movielistlanding/movielistlanding.css";
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, } from 'swiper/modules'
@@ -21,7 +20,7 @@ const Topratedmovieslanding = () => {
     
     <div className="text-white pt-20 pb-20 top-0 left-0 right-0 z-20">
     <div className="text-white pt-20 px-20 font-bold mb-4 pb-30 flex items-center justify-between">
-      <h1 className='text-3xl '>Top Rated Movies</h1>
+      <h1 className='text-3xl mb-20'>Top Rated Movies</h1>
       <button variant="text" className="flex items-center gap-2" onClick={() => navigate("/topratedmovies")}>
       See More{" "}
       <svg
@@ -56,16 +55,13 @@ const Topratedmovieslanding = () => {
       }}
     >{
         topratedMovies.map((movie, index) => (
-            <SwiperSlide>
-              <div
-                key={index}
-                className="flex flex-col items-center mr-12 m-10 mb-4 relative"
-              >
+            <SwiperSlide key={index}>
+                <div className="movie-container cursor-pointer hover:scale-95">
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   alt={`${index}`}
-                  className="max-w-xs"
-                />
+                  className="max-w-xs transition-opacity hover:opacity-20"
+                  />
                 <h1 className="text-white font-bold mt-2">{movie.title}</h1>
                 
               </div>
