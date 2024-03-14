@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from "react";
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
+import love from "../../assets/Images/love.svg";
+import list from "../../assets/Images/list.svg";
+import add from "../../assets/Images/add.svg";
 import axios from 'axios'; // For making API requests
 
 
@@ -58,7 +61,7 @@ const Moviedetail = () => {
                <img
                 src={`https://image.tmdb.org/t/p/w500${movieData.poster_path}`}
                 alt={movieData.title}
-                className="border border-white shadow-xl rounded-lg ml-24 pt-10 object-fit-cover h-96 w-full mt-24"
+                className="border border-white shadow-xl rounded-lg ml-24 object-fill h-auto w-full mt-24"
               />
             </div>
             <div className="ml-28 mt-10">
@@ -76,11 +79,21 @@ const Moviedetail = () => {
               <div className="pt-2" />
               <h2>Overview
                 <p>{movieData.overview}</p></h2>
-              <div className="pt-2" />
-              
+              <div className="pt-12" /> 
+
+              <div className="flex"> 
+              <button className="w-44 border bg-transparent hover:bg-white hover:text-white rounded-lg hover:text-black">Watch </button>
+              <button><img src={love} alt="love-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
+              <button><img src={add} alt="add-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
+              <button><img src={list} alt="list-icon" className="w-8 ml-3 rounded-full hover:bg-black" /></button>
+              </div>
+          
             </div>
+            
           </div>
+ 
         )}
+       
       </div>
       <Footer />
     </>
