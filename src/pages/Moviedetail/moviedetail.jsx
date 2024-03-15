@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+
+import React, { useState } from "react";
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
 import love from "../../assets/Images/love.svg";
@@ -34,6 +35,7 @@ const getGenreNames = (genreIds) => {
 };
 
 const Moviedetail = () => {
+  const {results} = useQueryPopular();
   const [searchTerm, setSearchTerm] = useState("");
   const [movieData, setMovieData] = useState(null);
   const [error, setError] = useState(null);
@@ -61,6 +63,7 @@ const Moviedetail = () => {
     }
   };
   // {console.log(genres)}
+
   return (
     <>
       <Navbar />
