@@ -2,7 +2,7 @@ import React from 'react';
 import useQueryPopular from '../../hooks/useQueryPopular';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 const Popularmovieslanding = () => {
   const { popularMovies, isLoading } = useQueryPopular();

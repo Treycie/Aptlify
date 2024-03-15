@@ -17,15 +17,12 @@ const router = createBrowserRouter([
 
   { path: "/getstarted", element: <Signup /> },
   { path: "/getstarted/signup", element: <Getstarted /> },
-  //   {path: "/upcomingmovies", element: },
-  //   {path: "/topratedmovies", element: },
-  //   {path: "/popularmovies", element:}
 
   { path: "/getstarted", element: <Getstarted /> },
   { path: "/topratedmovies", element: <Topratedmovies /> },
-  {path: "/upcomingmovies", element: <Upcomingmovies/>},
-  { path: "/popularmovies", element: <Popularmovies />},
- 
+  { path: "/upcomingmovies", element: <Upcomingmovies /> },
+  { path: "/popularmovies", element: <Popularmovies /> },
+
   { path: "/moviedetail", element: <Moviedetail /> },
   { path: "/detail/:id", element: <Moviedetail /> }
 
