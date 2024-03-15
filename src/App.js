@@ -3,6 +3,7 @@ import Landing from "./pages/Landingpage/landing"
 import Signup from "./pages/Signup/signup"
 import Signin from "./pages/Signin/signin"
 import Getstarted from "./pages/Getstarted/getstarted"
+import Moviedetail from "./pages/Moviedetail/moviedetail"
 
 
 
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
   { path: "/signin", element: <Signin /> },
   { path: "/signup", element: <Signup /> },
   { path: "/getstarted", element: <Getstarted /> },
+  {path: "/moviedetail", element: <Moviedetail/>}
 ])
 const App = () => {
   return (
