@@ -32,8 +32,8 @@ const Popularmovies = () => {
   return (
     <>
       <div className="bg-gray-900">
-        <h1 className="text-white text-center text-3xl my-4 padding-top: 3px padding-bottom: 3px">
-          Popular Movies List
+        <h1 className="text-white text-center text-3xl font-bold my-4 padding-top: 3px padding-bottom: 3px">
+          Popular Movies
         </h1>
         <div className="flex flex-wrap justify-center">
           {isLoading ? (
@@ -65,7 +65,7 @@ const Popularmovies = () => {
                     <FaStar className="text-yellow-600 ml-3" />
                   </div>
                 )}
-                <p className="mt-2 text-center text-white">{movie.title}</p>
+                <p className="mt-2 font-bold text-2xl text-center text-white">{movie.title}</p>
                 {/* <p>{movie.vote_average}</p> */}
               </div>
             ))
