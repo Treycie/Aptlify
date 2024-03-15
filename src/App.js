@@ -13,13 +13,13 @@ const router = createBrowserRouter([
   { path: "/signup", element: <Signup /> },
 
   { path: "/getstarted", element: <Signup /> },
-  {path: "/getstarted/signup", element: <Getstarted />}
-//   {path: "/upcomingmovies", element: },
-//   {path: "/topratedmovies", element: },
-//   {path: "/popularmovies", element:}
+  { path: "/getstarted/signup", element: <Getstarted /> },
+  //   {path: "/upcomingmovies", element: },
+  //   {path: "/topratedmovies", element: },
+  //   {path: "/popularmovies", element:}
 
   { path: "/getstarted", element: <Getstarted /> },
-  {path: "/moviedetail", element: <Moviedetail/>}
+  { path: "/moviedetail", element: <Moviedetail /> }
 
 ])
 const App = () => {

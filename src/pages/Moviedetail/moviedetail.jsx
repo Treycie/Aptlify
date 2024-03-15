@@ -35,7 +35,7 @@ const getGenreNames = (genreIds) => {
 };
 
 const Moviedetail = () => {
-  const {results} = useQueryPopular();
+  // const {results} = useQueryPopular();
   const [searchTerm, setSearchTerm] = useState("");
   const [movieData, setMovieData] = useState(null);
   const [error, setError] = useState(null);
