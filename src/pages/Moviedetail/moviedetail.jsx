@@ -6,11 +6,38 @@ import add from "../../assets/Images/add.svg";
 import star from "../../assets/Images/star.svg";
 import axios from 'axios'; // For making API requests
 
+const genreId = {
+  28: 'Action',
+  12: 'Adventure',
+  16: 'Animation',
+  35: 'Comedy',
+  80: 'Crime',
+  99: 'Documentary',
+  18: 'Drama',
+  10751: 'Family',
+  14: 'Fantasy',
+  36: 'History',
+  27: 'Horror',
+  10402: 'Music',
+  9648: 'Mystery',
+  10749: 'Romance',
+  878: 'Science Fiction',
+  10770: 'TV Movie',
+  53: 'Thriller',
+  10752: 'War',
+  37: 'Western'
+};
+
+const getGenreNames = (genreIds) => {
+  console.log(genreIds)
+  return genreIds?.map((id) => genreId[id] || "Unknown Genre");
+};
 
 const Moviedetail = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movieData, setMovieData] = useState(null);
   const [error, setError] = useState(null);
+  const genres = getGenreNames(movieData?.genre_ids);
 
   const onSearchHandler = async () => {
     if (!searchTerm) {
@@ -22,6 +49,8 @@ const Moviedetail = () => {
       const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=fc39126ceb1440435e56fd80d45edb04&query=${searchTerm}`);
       console.log(response.data);
       setMovieData(response.data.results[0]);
+      // console.log(movieData)
+
       setError(null)
     } catch (error) {
       console.error('Error fetching movie data:', error);
@@ -31,7 +60,7 @@ const Moviedetail = () => {
       setSearchTerm("");
     }
   };
-
+  // {console.log(genres)}
   return (
     <>
       <Navbar />
@@ -56,6 +85,7 @@ const Moviedetail = () => {
         {error && <p className="text-red-500">{error}</p>}
         
         {movieData && (
+        
           <div className="mt-15 w-full flex items-center justify-center text-white font-bold">
             <div>
                <img
@@ -67,7 +97,7 @@ const Moviedetail = () => {
             <div className="ml-28 mt-16">
               <h1>Title: {movieData.title}</h1>
               <div className="pt-2" />
-              <p>Genre: {movieData.genre_ids}</p>
+              <p>Genres: {genres.join(', ')}</p>
               <div className="pt-2" />
               <p>Year: {movieData.release_date}</p>
               <div className="pt-2" />
