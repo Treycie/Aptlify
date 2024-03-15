@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-// import Footer from "../../components/Footer/footer";
 import love from "../../src/assets/Images/love.svg";
 import add from "../../src/assets/Images/add.svg";
 import star from "../../src/assets/Images/star.svg";
@@ -69,14 +68,16 @@ const Search = () => {
     <div className={`${movieData && 'relative w-full h-full'}`}>
     
         <div className="w-full flex items-center justify-center">
+
           <input
-            type="text"
-            placeholder="Type a movie name..."
-            id="uniqueId"
-            className="text-[19px] mr-4 outline-none rounded-md p-2 w-[40%]"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+type="search"            
+name="Search"
+placeholder="Search for Movies"
+className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900"
+value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)} />"
+            
+          
           <button
             className="border border-white rounded-md p-2 text-white font-bold w-20"
             onClick={onSearchHandler}
@@ -137,7 +138,6 @@ const Search = () => {
       </div>
         }
           
-      {/* <Footer /> */}
     </div>
   );
 };
