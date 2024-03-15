@@ -12,7 +12,7 @@ const router = createBrowserRouter([
   { path: "/signin", element: <Signin /> },
   { path: "/signup", element: <Signup /> },
   { path: "/getstarted", element: <Getstarted /> },
-  { path: "/topratedmovies", element: <Topratedmovies/>}
+  { path: "/topratedmovies", element: <Topratedmovies /> }
 ])
 const App = () => {
   return (
