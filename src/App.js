@@ -1,7 +1,8 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import Landing from "./pages/Landingpage/landing"
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Landing from "./pages/Landingpage/landing";
+import Signin from "./pages/Signin/signin";
+import Popularmovies from "./pages/Popularmovies/popularmovies";
 import Signup from "./pages/Signup/signup"
-import Signin from "./pages/Signin/signin"
 import Getstarted from "./pages/Getstarted/getstarted"
 import Moviedetail from "./pages/Moviedetail/moviedetail"
 
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
   //   {path: "/popularmovies", element:}
 
   { path: "/getstarted", element: <Getstarted /> },
+  { path: "/popularmovies", element: <Popularmovies />},
+ 
   { path: "/moviedetail", element: <Moviedetail /> }
 
 ])
