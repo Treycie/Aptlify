@@ -22,7 +22,7 @@ const router = createBrowserRouter([
 
   { path: "/getstarted", element: <Getstarted /> },
   { path: "/topratedmovies", element: <Topratedmovies /> },
-  {path: "/upcomingmovies", element: <Upcomingmovies/>}
+  {path: "/upcomingmovies", element: <Upcomingmovies/>},
   { path: "/moviedetail", element: <Moviedetail /> }
 
 ])
