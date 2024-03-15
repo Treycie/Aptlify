@@ -11,7 +11,7 @@ const Moviedetail = () => {
   return (
     <>
       <div className="min-h-screen w-full mt-0 bg-black">
-        <div className="mt-0 flex items-center justify-center text-white font-bold">
+        <div className="mt-0 flex items-center justify-center text-white text-2xl font-bold">
           <div className="mt-10 ml-10">
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
