@@ -5,7 +5,7 @@ const useQueryUpcoming = () => {
   const baseUrl = "https://api.themoviedb.org/3";
 
   const fetchUpcoming = async () => {
-    const url = `${baseUrl}/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=3`;
+    const url = `${baseUrl}/movie/upcoming?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=3`;
     const options = {
       method: "GET",
       headers: {
