@@ -31,7 +31,7 @@ const Popularmovies = () => {
 
   return (
     <>
-      <div className="bg-gray-900">
+      <div className="bg-gray-900 ">
         <h1 className="text-white text-center text-3xl font-bold my-4 padding-top: 3px padding-bottom: 3px">
           Popular Movies
         </h1>

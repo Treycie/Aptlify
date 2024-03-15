@@ -50,18 +50,20 @@ const Upcominglanding = () => {
       }}
     >{
         upcomingMovies.map((movie, index) => (
-            <SwiperSlide key={index}>
-                <div className="movie-container cursor-pointer hover:scale-95">
-                <img
-                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                  alt={`${index}`}
-                  className="max-w-xs transition-opacity hover:opacity-20"
-                  />
-                <h1 className="text-white text-2xl font-bold mt-2">{movie.title}</h1>
-                
-              </div>
+          <SwiperSlide key={index}>
+
               
-              </SwiperSlide>
+          <div className="movie-container cursor-pointer hover:scale-95" onClick={() => navigate(`/detail/${movie.id}`, {state: {movie}})}>
+            <img
+              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              alt={`${index}`}
+              className="max-w-xs transition-opacity hover:opacity-20"
+            />
+            <h1 className="text-white text-2xl font-bold mt-2">{movie.title}</h1>
+          </div>
+     
+         
+        </SwiperSlide>
             ))
         }
     </Swiper>

@@ -2,10 +2,11 @@ import React from 'react';
 import useQueryPopular from '../../hooks/useQueryPopular';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Popularmovieslanding = () => {
   const { popularMovies, isLoading } = useQueryPopular();
+  console.log('pop', popularMovies)
   const navigate = useNavigate();
 
   return (
@@ -52,7 +53,9 @@ const Popularmovieslanding = () => {
           >
             {popularMovies.map((movie, index) => (
               <SwiperSlide key={index}>
-                <div className="movie-container cursor-pointer hover:scale-95">
+
+              
+                <div className="movie-container cursor-pointer hover:scale-95" onClick={() => navigate(`/detail/${movie.id}`, {state: {movie}})}>
                   <img
                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                     alt={`${index}`}
@@ -60,6 +63,8 @@ const Popularmovieslanding = () => {
                   />
                   <h1 className="text-white text-2xl font-bold mt-2">{movie.title}</h1>
                 </div>
+           
+               
               </SwiperSlide>
             ))}
           </Swiper>

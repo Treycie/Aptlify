@@ -26,7 +26,8 @@ const router = createBrowserRouter([
   {path: "/upcomingmovies", element: <Upcomingmovies/>},
   { path: "/popularmovies", element: <Popularmovies />},
  
-  { path: "/moviedetail", element: <Moviedetail /> }
+  { path: "/moviedetail", element: <Moviedetail /> },
+  { path: "/detail/:id", element: <Moviedetail /> }
 
 ])
 const App = () => {
