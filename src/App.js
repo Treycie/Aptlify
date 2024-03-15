@@ -1,12 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Landing from "./pages/Landingpage/landing";
-import Signup from "./pages/Signup/signup";
 import Signin from "./pages/Signin/signin";
-import Getstarted from "./pages/Getstarted/getstarted";
 import Popularmovies from "./pages/Popularmovies/popularmovies";
-import Landing from "./pages/Landingpage/landing"
 import Signup from "./pages/Signup/signup"
-import Signin from "./pages/Signin/signin"
 import Getstarted from "./pages/Getstarted/getstarted"
 import Moviedetail from "./pages/Moviedetail/moviedetail"
 
