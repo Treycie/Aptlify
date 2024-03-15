@@ -54,13 +54,13 @@ const Popularmovies = () => {
                 {hoveredMovie === movie.id && (
                   <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
                     <span>
-                      <img src={play} className="w-8 ml-3 rounded-full" />
+                      <img src={play} alt="Play Icon" className="w-8 ml-3 rounded-full" />
                     </span>
                     <span>
-                      <img src={check} className="w-8 ml-3 rounded-full" />
+                      <img src={check} alt="Check Icon" className="w-8 ml-3 rounded-full" />
                     </span>
                     <span>
-                      <img src={like} className="w-8 ml-3 rounded-full" />
+                      <img src={like} alt="Like Icon" className="w-8 ml-3 rounded-full" />
                     </span>
                     <FaStar className="text-yellow-600 ml-3" />
                   </div>
