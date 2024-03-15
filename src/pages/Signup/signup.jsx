@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Signup = () => {
   const navigate = useNavigate()
   return (
@@ -42,6 +43,7 @@ const Signup = () => {
                   placeholder="Confirm Password"
                   autoComplete="current-password"
                 />
+                <button className="bg-red-600 py-3 my-6 rounded font-bold" >
                 <button className="bg-red-600 py-3 my-6 rounded font-bold" onClick={() => navigate('/getstarted/signup')}>
                   Sign Up
                 </button>
