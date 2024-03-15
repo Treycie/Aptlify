@@ -58,7 +58,7 @@ const Popularmovieslanding = () => {
                     alt={`${index}`}
                     className="max-w-xs transition-opacity hover:opacity-20"
                   />
-                  <h1 className="text-white font-bold mt-2">{movie.title}</h1>
+                  <h1 className="text-white text-2xl font-bold mt-2">{movie.title}</h1>
                 </div>
               </SwiperSlide>
             ))}
