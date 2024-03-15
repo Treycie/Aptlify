@@ -110,6 +110,8 @@ export default Topratedmovies;
 
 
 
+
+
 // import { useEffect, useState } from "react";
 // import play from "../../assets/Images/play.svg";
 // import check from "../../assets/Images/check.svg";

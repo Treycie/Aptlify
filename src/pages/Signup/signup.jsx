@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const Signup = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="w-full h-screen">
@@ -21,14 +23,14 @@ const Signup = () => {
               >
                 <input
                   // onChange={(e) => setEmail(e.target.value)}
-                  className="p-3 my-2 bg-gray-700 rouded"
+                  className="p-3 my-2 bg-white-700 text-black rouded"
                   type="email"
                   placeholder="Email"
                   autoComplete="email"
                 />
                 <input
                   // onChange={(e) => setPassword(e.target.value)}
-                  className="p-3 my-2 bg-gray-700 rouded"
+                  className="p-3 my-2 bg-white-700 text-black rouded"
                   type="password"
                   placeholder="Password"
                   autoComplete="current-password"
@@ -36,12 +38,12 @@ const Signup = () => {
 
                 <input
                   // onChange={(e) => setPassword(e.target.value)}
-                  className="p-3 my-2 bg-white-700 rouded"
+                  className="p-3 my-2 bg-white-700 text-black rouded"
                   type=" Confirm password"
                   placeholder="Confirm Password"
                   autoComplete="current-password"
                 />
-                <button className="bg-red-600 py-3 my-6 rounded font-bold" >
+                <button className="bg-red-600 py-3 my-6 rounded font-bold" onClick={() => navigate('/getstarted/signup')}>
                   Sign Up
                 </button>
                 <div className="flex justify-between items-center text-sm text-gray-600">
